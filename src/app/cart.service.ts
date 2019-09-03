@@ -27,4 +27,11 @@ export class CartService {
    getShippingPrices() {
     return this.http.get('/assets/shipping.json');
   }
+
+  getGitHubUserInfo(){
+   // return this.http.get('https://api.github.com/users/freilly');
+       return this.http.get('/assets/user.json');
+
+  }
+
 }

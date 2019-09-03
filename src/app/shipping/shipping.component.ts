@@ -9,6 +9,7 @@ import { CartService } from '../cart.service';
 })
 export class ShippingComponent implements OnInit {
   shippingCosts;
+  gitHubUser;
 
   constructor(
       private cartService: CartService
@@ -16,6 +17,8 @@ export class ShippingComponent implements OnInit {
 
   ngOnInit() {
         this.shippingCosts = this.cartService.getShippingPrices();
+        this.gitHubUser = this.cartService.getGitHubUserInfo();
+        //this.gitHubUser = JSON.parse(user);
   }
 
 }

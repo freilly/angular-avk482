@@ -4,3 +4,7 @@
   <span>{{ shipping.type }}</span>
   <span>{{ shipping.price | currency }}</span>
 </div>
+
+<div class="shipping-item" *ngFor="let user of gitHubUser | async">
+  <span>{{ user.login}}</span>
+</div>
